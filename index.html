@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Mxhtransporte : Proyecto sobre transporte público para MXHacks2014">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mxhtransporte</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/VidalChavez/MXHTransporte">View on GitHub</a>
+
+          <h1 id="project_title">Mxhtransporte</h1>
+          <h2 id="project_tagline">Proyecto sobre transporte público para MXHacks2014</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/VidalChavez/MXHTransporte/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/VidalChavez/MXHTransporte/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="mxhtransporte" class="anchor" href="#mxhtransporte"><span class="octicon octicon-link"></span></a>MXHTransporte</h1>
+
+<p>Proyecto sobre transporte público para MXHacks2014</p>
+
+<p>El proyecto cuenta con tres partes:</p>
+
+<p><b>Modulo del camion:</b>
+    *Conteo de personas.
+    *GPS (Para llevar rastro del camion).
+    *WiFi.</p>
+
+<p><b>Modulo de datos:</b>
+    *DB
+    *API (conección con YUN)</p>
+
+<p><b>Modulo de las estaciones:</b>
+    *Display con tiempo aprox. de llegada.
+    *Pagina con informacion de tiempos y rutas.
+    *Pebble [opcional].</p>
+
+<p><b>Modulo de camion</b></p>
+
+<p>En el modulo de camion se lleva un conteo de pasajeros y se monitorea la posicion del veiculo por medio de un GPS. Esta informacion es procesada por un microcontrolador y mandada al módulo de datos por medio de WiFi.</p>
+
+<p><b>Modulo de datos</b></p>
+
+<p>En el modulo de datos se toman todos los datos enviados desde el modulo del caminon por medio del API. En el modulo de datos se realiza un alalizis de los datos para poder determinar tiempos aprox. de las rutas y numero de pasajeros promedio, entre otras cosas.</p>
+
+<p><b>Modulo de las estaciones</b></p>
+
+<p>En el modulo de las estaciones es en donde se le informa al usuario en cuanto tiempo aprox. llegara el siguiente camion. 
+Otra forma por la que el usuario puede ver el camion es por medio de la WebApp, en la cual se puede ver la ruta que el camion sigue, en que parte de la ruta va y los tiempos aproximados (en que llegue y de destino).</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mxhtransporte maintained by <a href="https://github.com/VidalChavez">VidalChavez</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
