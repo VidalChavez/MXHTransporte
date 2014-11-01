@@ -6,18 +6,23 @@ Proyecto sobre transporte público para MXHacks2014
 El proyecto cuenta con tres partes:
 
 <b>Modulo del camion:</b>
-	*Conteo de personas.
-	*GPS (Para llevar rastro del camion).
-	*WiFi.
+
+	-Conteo de personas.
+	-GPS (Para llevar rastro del camion).
+	-WiFi.
 
 <b>Modulo de datos:</b>
-	*DB
-	*API (conección con YUN)
+
+	-DB
+	-API (conección con YUN)
 
 <b>Modulo de las estaciones:</b>
-	*Display con tiempo aprox. de llegada.
-	*Pagina con informacion de tiempos y rutas.
-	*Pebble [opcional].
+
+	-Display con tiempo aprox. de llegada.
+	-Pagina con informacion de tiempos y rutas.
+	-Pebble [opcional].
+
+
 
 <b><u>Modulo de camion</u></b>
 
