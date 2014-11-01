@@ -7,6 +7,8 @@ from api import views
 
 router = routers.DefaultRouter()
 router.register(r'camiones', views.CamionViewSet)
+router.register(r'rutas', views.RutaViewSet)
+router.register(r'paradas', views.ParadaViewSet)
 
 
 urlpatterns = patterns('',
