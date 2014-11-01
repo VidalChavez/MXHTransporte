@@ -30,6 +30,10 @@ class Camion(models.Model):
     promedio_pasajeros = models.FloatField(null=True)
     ruta = models.ForeignKey('Ruta')
     
+    class Meta:
+        verbose_name_plural = "Camiones"
+    
+    
     def __unicode__(self):
         return self.identificador
     
