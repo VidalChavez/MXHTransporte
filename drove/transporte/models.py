@@ -27,7 +27,7 @@ class Camion(models.Model):
     velocidad = models.IntegerField(null=True)
     num_pasajeros = models.IntegerField(null=True)
     promedio_tiempo = models.FloatField(null=True)
-    promedio_pasajeros = models.FLoatField(null=True)
+    promedio_pasajeros = models.FloatField(null=True)
     ruta = models.ForeignKey('Ruta')
     
     def __unicode__(self):
