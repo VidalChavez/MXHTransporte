@@ -14,8 +14,8 @@ class Ruta(models.Model):
     
 class Parada(models.Model):
     nombre_parada = models.CharField(max_length=25)
-    longitud = models.CharField(max_length=140)
-    latitud = models.CharField(max_length=140)
+    longitud = models.CharField(max_length=140, blank=True)
+    latitud = models.CharField(max_length=140, blank=True)
     ruta = models.ManyToManyField('Ruta')
     
     def __unicode__(self):
@@ -24,10 +24,10 @@ class Parada(models.Model):
 
 class Camion(models.Model):
     identificador = models.CharField(max_length=32)
-    velocidad = models.IntegerField(null=True)
-    num_pasajeros = models.IntegerField(null=True)
-    promedio_tiempo = models.FloatField(null=True)
-    promedio_pasajeros = models.FloatField(null=True)
+    velocidad = models.IntegerField(null=True, blank=True)
+    num_pasajeros = models.IntegerField(null=True, blank=True)
+    promedio_tiempo = models.FloatField(null=True, blank=True)
+    promedio_pasajeros = models.FloatField(null=True, blank=True)
     ruta = models.ForeignKey('Ruta')
     
     class Meta:
