@@ -45,7 +45,11 @@
               <select id="ruta" class="form-control">
               {% for ruta in rutas %}
               <option>{{ruta}}</option>
-      
+              
+              <input type="hidden" name="long0" value={{ ruta.inicio_long }}>
+              <input type="hidden" name="long" value={{ ruta.inicio_lat }}>
+              <input type="hidden" name="lat0" value={{ ruta.fin_long }}>
+              <input type="hidden" name="lat" value={{ ruta.fin_lat }}>
               {% endfor %}
             </select>
           </form>
