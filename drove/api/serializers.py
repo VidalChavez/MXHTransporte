@@ -16,6 +16,7 @@ class CamionSerializer(serializers.HyperlinkedModelSerializer):
         
         
 class ParadaSerializer(serializers.HyperlinkedModelSerializer):
-    model = Ruta
+    class Meta:
+        model = Parada
 
     
