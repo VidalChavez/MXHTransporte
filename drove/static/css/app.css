@@ -1,10 +1,16 @@
-
-#left-side-bar {
-    
-    margin-top: 20px;
-    
+.navbar-inverse {
+    background-color: #6a80cf;
+    border-color: #6a80cf;
 }
 
-body {
-    background-color: #315b9b;
+.navbar-inverse .navbar-toggle {
+    border-color: #6a80cf;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #6a80cf;
+}
+
+.navbar-inverse .navbar-brand{
+    color: white;
 }

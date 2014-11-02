@@ -12,9 +12,10 @@ def index(request):
     context = RequestContext(request)
     
     lista_rutas = Ruta.objects.all()
+    print lista_rutas
     context_dict = {'rutas':lista_rutas}
     
-    return render_to_response('base.html', context_dict, context)
+    return render_to_response('prueba.html', context_dict, context)
     
 
 
