@@ -19,8 +19,6 @@ class RutaSerializer(serializers.HyperlinkedModelSerializer):
 class CamionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Camion
-        fields = ('identificador', 'velocidad', 'num_pasajeros', 'promedio_tiempo',
-                  'promedio_pasajeros', 'ruta')
         
         
 

@@ -52,8 +52,14 @@ function handleNoGeolocation(errorFlag) {
 
 ////////////
 function calcRoute() {
-  var start = document.getElementById('start').value;
-  var end = document.getElementById('end').value;
+  var inicio1 = document.getElementById('long0').value;
+  var inicio2 = document.getElementById('long').value;
+  var fin1 = document.getElementById('lat0').value;
+  var fin2 = document.getElementById('lat').value;
+  
+  var start = new google.maps.LatLng(19.339815394277245, -99.19013857841492);
+  var end = new google.maps.LatLng(19.49092837568496, 99.11975741386414);
+  
   var waypts = [];
   var checkboxArray = document.getElementById('waypoints');
   for (var i = 0; i < checkboxArray.length; i++) {
