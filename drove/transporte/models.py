@@ -7,6 +7,10 @@ class Ruta(models.Model):
     num_pasajeros = models.IntegerField(blank=True, null=True)
     promedio_personas = models.FloatField(blank=True, null=True)
     promedio_personas_camion = models.FloatField(blank=True, null=True)
+    inicio_long = models.CharField(max_length=140, blank=True, default="")
+    inicio_lat = models.CharField(max_length=140, blank=True, default="")
+    fin_long =  models.CharField(max_length=140, blank=True, default="")
+    fin_lat =  models.CharField(max_length=140, blank=True, default="")
     
     def __unicode__(self):
         return self.nombre_ruta
@@ -28,6 +32,10 @@ class Camion(models.Model):
     num_pasajeros = models.IntegerField(null=True, blank=True)
     promedio_tiempo = models.FloatField(null=True, blank=True)
     promedio_pasajeros = models.FloatField(null=True, blank=True)
+    
+    longitud = models.CharField(max_length=140, blank=True, default="")
+    latitud = models.CharField(max_length=140, blank=True, default="")
+    
     ruta = models.ForeignKey('Ruta')
     
     class Meta:
