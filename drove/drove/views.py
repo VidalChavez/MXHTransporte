@@ -14,7 +14,7 @@ def index(request):
     lista_rutas = Ruta.objects.all()
     context_dict = {'rutas':lista_rutas}
     
-    return render_to_response('index.html', context_dict, context)
+    return render_to_response('base.html', context_dict, context)
     
 
 
