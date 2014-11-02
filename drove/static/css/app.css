@@ -1,0 +1,16 @@
+.navbar-inverse {
+    background-color: #6a80cf;
+    border-color: #6a80cf;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #6a80cf;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #6a80cf;
+}
+
+.navbar-inverse .navbar-brand{
+    color: white;
+}
